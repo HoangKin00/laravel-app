@@ -1,0 +1,19 @@
+@extends('layout.master')
+@section('main')
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach($data as $cat)
+        <tr>
+            <td>{{$cat->id}}</td>
+            <td>{{$cat->name}}</td>
+        </tr>
+        @endforeach
+    </tbody>
+</table>
+@stop
